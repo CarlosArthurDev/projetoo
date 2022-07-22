@@ -1,0 +1,42 @@
+<html>
+<head>
+
+</head>
+<body>
+    <img width="512" alt="Happy family (1)" src="https://upload.wikimedix-Ha.org/wikipedia/commons/thumb/5/5e/Happy_family_%281%29.jpg/512pappy_family_%281%29.jpg" id="familia"></a>
+<h4 id="familynames">fernanda</h4>
+<button onclick="update"()>proximo</button>
+<script>
+ var images = [
+"Sarah-Hill-002-1024x683.jpeg",
+"young-man-1281282_19201.webp",
+"20112696-portrait-of-boy.webp",
+"360_F_56140454_q4nbUmTCcC1ovIJrOL1SxJuaYXwvSz68.jpeg"
+ ]  
+ var nomes = [
+ "fernanda", "carlos", "carlos arthur", "sibele"
+
+ ]
+var i= 0;
+function update(){
+
+ i++;
+ var NumberOfFamilyMemberInArray = 5
+  if(i > NumberOfFamilyMemberInArray ) {
+    i = 0;
+  }
+  var updatedImage = images[i];
+  var updatedName = nomes[i];
+ document.getElementById("familia").src = updatedImage;
+ document.getElementById("familynames").innerHTML= updatedName;
+
+
+}
+
+
+</script>
+     
+</body>
+
+
+</html>
